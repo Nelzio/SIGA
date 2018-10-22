@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['icca-mz.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['icca-app.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
