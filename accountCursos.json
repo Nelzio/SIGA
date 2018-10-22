@@ -63,7 +63,7 @@
     "fields": {
         "nome": "Petr\u00f3leo e G\u00e1s Natura",
         "regime": false,
-        "mensalidade": "2750.00"
+        "mensalidade": "https://icca-app.herokuapp.com/ | https://git.heroku.com/icca-app.git"
     }
 }
 ]
