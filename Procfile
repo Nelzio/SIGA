@@ -1,0 +1,1 @@
+web: gunicorn icca.wsgi --log-file -

@@ -1,0 +1,41 @@
+
+.shadow-box{
+    box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.4) !important;
+}
+
+.shadow-box-top{
+    box-shadow: 0rem 0.7rem 1rem rgba(0, 0, 0, 0.4) !important;
+}
+
+.nomargin {
+    margin: -2px !important;
+ }
+
+ .nomargin-height {
+    margin-top: -2px !important;
+        margin-bottom: -2px !important;
+ }
+  .nopading {
+      padding: 0 !important;
+  }
+
+    .nopading-top-bottom {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .pading-width-c{
+      padding: 0rem 0.9375rem 0rem 0.9375rem;
+  }
+
+  .total-width{
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+      right: 0;
+  left: 0;
+  }
+
+  .no-border, .card{
+    border-radius: 0 0 0 0;
+  }

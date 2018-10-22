@@ -1,0 +1,50 @@
+.animated0 {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0,.77,1,.28);
+  }
+  
+  .animated1 {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-delay: 21s;
+  }
+  
+  @media (min-width: 768px) {
+      #emailForm{
+       transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+          opacity: 1;
+      }
+  }
+  
+  
+  .movimento{
+    position: relative;
+    animation-name: mov;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    /*animation-timing-function: cubic-bezier(0,.77,1,.28);*/
+  }
+  
+  
+  @keyframes mov{
+  from{ transform: translateX(4000px); }
+  to{ transform: translate(-100px); }
+  }
+  
+  .movimento1{
+    position: relative;
+    animation-name: mov1;
+    animation-duration: 30s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+  }
+  
+  
+  @keyframes mov1{
+  from{ transform: translateY(400px); }
+  to{ transform: translate(0px); }
+  }

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ICCA</title>
+    <link rel='icon' href="{% static 'home/img/iccaicon.ico' %}" type='image/x-icon' />
+    <link rel='shortcut icon' href="{% static 'home/img/iccaicon.ico' %}" type='image/x-icon' />
+
+
+    <link rel="stylesheet" href="{% static 'home/bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'home/bootstrap/css/bootstrap-grid.css' %}">
+    <link rel="stylesheet" href="{% static 'home/bootstrap/css/bootstrap-reboot.css' %}">
+    <link rel="stylesheet" href="{% static 'home/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'home/css/plugin.css' %}">
+    <link rel="stylesheet" href="{% static 'home/fonte/fontawesome/web-fonts-with-css/css/fontawesome-all.css' %}">
+    <!--<link rel="stylesheet" href="{% static 'home/fonts/font-awesome/css/font-awesome.css' %}">-->
+    <link rel="stylesheet" href="{% static 'home/css/movimento.css' %}">
+    <!--cursos css-->
+    <link rel="stylesheet" href="{% static 'home/css/courses.css' %}">
+    <link rel="stylesheet" href="{% static 'home/css/animate.css' %}">
+
+    <!--Blog css-->
+    <link rel="stylesheet" href="{% static 'home/css/blog.css' %}">
+
+    <!--About css-->
+    <link rel="stylesheet" href="{% static 'home/css/about.css' %}">
+
+    <!--Cad css-->
+    <link rel="stylesheet" href="{% static 'home/css/cad.css' %}">
+
+    </head>
+    <body>
+        <div class="container-fluid nopading">
+            <img class="total-width" src="{% static 'home/img/iccalogo1.png' %}" height="150" alt="">
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success animate navbar-costom nopading-top-bottom">
+            <!--<a class="navbar-brand" href="#">ICCA</a>-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav navbar-costom-nav mr-auto ">
+                    <li class="nav-item" id="nav-home">
+                        <a  class="nav-link" href="/" id="link-home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item" id="nav-servicos">
+                        <a  class="nav-link" href="#">Servicos </a>
+                    </li>
+                    <li class="nav-item" id="nav-blog">
+                        <a  class="nav-link" href="{% url 'url_blog' %}">Blog </a>
+                    </li>
+                    <li class="nav-item" id="nav-biblioteca">
+                        <a  class="nav-link" href="{% url 'url_libery' %}">Biblioteca </a>
+                    </li>
+                    <li class="nav-item" id="nav-about">
+                        <a  class="nav-link" href="{% url 'url_about' %}">About </a>
+                    </li>
+                    <li class="nav-item" id="nav-conta">
+                        <a  class="nav-link" href="#">Conta </a>
+                    </li>
+
+                    <!--<li class="nav-item">
+                        <a  class="nav-link" href="#">My posts <span class="sr-only">(current)</span></a>
+                    </li>-->
+                </ul>
+            </div>
+        </nav>
+        <main>
+            {% block content_page %}
+
+            {% endblock  %}
+        </main>
+    <div class="container-fluid bg-success">
+        <footer class="" style="color: #ddd;">
+            <div class="container">
+                <div class="row contact">
+
+                    <div class="col-md-8 offset-md-2 ">
+                        <!--<h1>Meet us</h1>-->
+                        <div class="row contact-us">
+                            <div class="col-md-4 ">
+                                <h4>Endereco</h4>
+                                <p>Maputo</p>
+                                <p>Av. Karl Max</p>
+                                <p>Nr 501, 1o Andar</p>
+                            </div>
+                            <div class="col-md-4 info-contacto">
+                                <h4>Contacto</h4>
+                                <p>Email: info@icca.ac.mz</p>
+                                <p>Celular:+258 825 692 23</p>
+                                <p>Celular:+258 845 991 11 </p>
+                            </div>
+                            <div class="col-md-4">
+                                <h4>Redes Sociais</h4>
+                                <p><a href="http://facebook.com/iccamz">facebool.com/iccamz</a></p>
+                                <p>@ICCA</p>
+                                <p><a href="http://linked.in/iccamz">linkedIn/ICCA</a></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            {% block content_map %}
+
+                            {% endblock %}
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="{% static 'home/js/jquery.js' %}"></script>
+    <script src="{% static 'home/bootstrap/js/bootstrap.bundle.js' %}"></script>
+    <script src="{% static 'home/bootstrap/js/bootstrap.js' %}"></script>
+    <script src="{% static 'home/js/main.js' %}"></script>
+    <script src="{% static 'home/js/courses.js' %}"></script>
+    
+    <script src="{% static 'home/js/jquery.parallax.js' %}"></script> 
+    <script src="{% static 'home/js/backscroll.js' %}"></script>
+    </body>
+</html>

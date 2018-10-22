@@ -1,0 +1,201 @@
+{% extends "admins/base.html" %}
+{% block  content_page %}
+{% load static %}
+{% load home_extras %}
+
+
+
+      
+          <!-- Main content -->
+          <section class="content">
+            <div class="container-fluid">
+              <!-- Small boxes (Stat box) -->
+              <div class="row">
+                <div class="col-lg-3 col-6">
+                  <!-- small box -->
+                  <div class="no-border small-box bg-info">
+                    <div class="inner">
+                      <h3>{{estudantes|length}}</h3>
+      
+                      <p>Numeros de Estudantes</p>
+                    </div>
+                    <div class="icon">
+                      <i class="ion ion-bag"></i>
+                    </div>
+                    <a href="#" class="small-box-footer">Mais Informação <i class="fa fa-arrow-circle-right"></i></a>
+                  </div>
+                </div>
+                <!-- ./col -->
+                <div class="col-lg-3 col-6">
+                  <!-- small box -->
+                  <div class="no-border small-box bg-success">
+                    <div class="inner">
+                      <h3>53<sup style="font-size: 20px">%</sup></h3>
+      
+                      <p>Mensalidades Pagas</p>
+                    </div>
+                    <div class="icon">
+                      <i class="ion ion-stats-bars"></i>
+                    </div>
+                    <a href="#" class="small-box-footer">Mais Informação <i class="fa fa-arrow-circle-right"></i></a>
+                  </div>
+                </div>
+                <!-- ./col -->
+                <div class="col-lg-3 col-6">
+                  <!-- small box -->
+                  <div class="no-border small-box bg-warning">
+                    <div class="inner">
+                      <h3>44</h3>
+      
+                      <p>Matriculas Anuladas</p>
+                    </div>
+                    <div class="icon">
+                      <i class="ion ion-person-add"></i>
+                    </div>
+                    <a href="#" class="small-box-footer">Mais Informação <i class="fa fa-arrow-circle-right"></i></a>
+                  </div>
+                </div>
+                <!-- ./col -->
+                <div class="col-lg-3 col-6">
+                  <!-- small box -->
+                  <div class="no-border small-box bg-danger">
+                    <div class="inner">
+                      <h3>65</h3>
+      
+                      <p>Novos estudantes</p>
+                    </div>
+                    <div class="icon">
+                      <i class="ion ion-pie-graph"></i>
+                    </div>
+                    <a href="#" class="small-box-footer">Mais Informação <i class="fa fa-arrow-circle-right"></i></a>
+                  </div>
+                </div>
+                <!-- ./col -->
+              </div>
+              <!-- /.row -->
+              <!-- Main row -->
+              <div class="row">
+                <!-- Left col -->
+                <section class="col-lg-7 connectedSortable">
+                  <!-- Custom tabs (Charts with tabs)-->
+                  <div class="card">
+                    <div class="card-header d-flex p-0">
+                      <h3 class="card-title p-3">
+                        Estudantes
+                      </h3>
+                      <ul class="nav nav-pills ml-auto p-2">
+                        <li class="nav-item">
+                          <a class="nav-link active no-border" href="#revenue-chart" data-toggle="tab">Tabela</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link no-border" href="#sales-chart" data-toggle="tab">Grafico</a>
+                        </li>
+                      </ul>
+                    </div><!-- /.card-header -->
+                    <div class="card-body nopading">
+                      <div class="tab-content p-0">
+                        <!-- Morris chart - Sales -->
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th scope="col">Nome</th>
+                              <th scope="col">Curso</th>
+                              <th scope="col">Regime</th>
+                              <th scope="col">Contacto</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {% for estudante in estudantes %}
+                              <tr>
+                                <th scope="row">{{estudante.estudante.nome}}</th>
+                                <td>{{estudante.curso.nome|first_word}}</td>
+                                <td>{{estudante.regime}}</td>
+                                <td>{{estudante.estudante.contacto}}</td>
+                              </tr>
+                            {% endfor %}
+                            
+                          </tbody>
+                        </table>
+                      </div>
+                    </div><!-- /.card-body -->
+                  </div>
+                  <!-- /.card -->
+      
+                </section>
+                <!-- /.Left col -->
+                <!-- right col (We are only adding the ID to make the widgets sortable)-->
+                <section class="col-lg-5 connectedSortable">
+                  
+                  <div class="card">
+                    <div class="card-header no-border">
+                      <div class="d-flex justify-content-between">
+                        <h3 class="card-title">Pagamento de mensalidades</h3>
+                        <a href="javascript:void(0);">Mais detalhes</a>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="d-flex">
+                        <p class="d-flex flex-column">
+                          <span class="text-bold text-lg">820</span>
+                          <span>Nr pagamentos</span>
+                        </p>
+                        <p class="ml-auto d-flex flex-column text-right">
+                          <span class="text-success">
+                            <i class="fa fa-arrow-up"></i> 12.5%
+                          </span>
+                          <span class="text-muted">Dentro do mes passado</span>
+                        </p>
+                      </div>
+                      <!-- /.d-flex -->
+      
+                      <div class="position-relative mb-4">
+                        <canvas id="visitors-chart" height="200"></canvas>
+                      </div>
+      
+                      <div class="d-flex flex-row justify-content-end">
+                        <span class="mr-2">
+                          <i class="fa fa-square text-primary"></i> Mes presente
+                        </span>
+      
+                        <span>
+                          <i class="fa fa-square text-gray"></i> Mes passado
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.card -->
+                  </section>
+              </div>
+
+                  
+          </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+
+
+
+{% endblock  %}
+
+              

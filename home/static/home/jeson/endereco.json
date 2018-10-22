@@ -1,0 +1,25 @@
+{
+    "maputo": [
+        {
+            "Ka-Mavota": [
+                "Laulane",
+                "Ferroviario",
+                "Magoanine"
+            ]
+        },
+        {
+            "Ka-Mpfumo": [
+                "Alto Mae",
+                "Baixa",
+                "Bairro Central"
+            ]
+        },
+        {
+            "Ka-Lhamankulo": [
+                "Fajardo",
+                "Malanga",
+                "Lhanguene"
+            ]
+        }
+    ]
+}

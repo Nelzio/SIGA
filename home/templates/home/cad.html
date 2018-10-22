@@ -1,0 +1,89 @@
+{% extends "home/base.html" %}
+
+{% block  content_page %}
+{% load static %}
+
+
+
+
+
+<div class="container col-8 mb-5" id="cadastro">
+
+        <h2 class="mb-5 text-center">Formulario de Matricula para <strong>{{curso.nome}}</strong></h2>
+
+        <form method="POST">
+            {% csrf_token %}
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Nome</label>
+                    <input type="text" class="form-control" placeholder="Nome Completo" name="nome">
+                </div>
+                <div class="form-group">
+                        <label for="exampleInputEmail1">Data Nascimento</label>
+                        <input type="date" class="form-control" name="dataNasc">
+                    </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" placeholder="Email" name="email">
+                  
+                </div>
+                <div class="row">
+                    <div class="form-group col-6">
+                        <label for="exampleInputEmail1">Telefone</label>
+                        <input type="text" class="form-control" placeholder="Telefone" name="telefone">
+                    </div>
+                    <div class="form-group col-6">
+                        <label for="exampleInputEmail1">Alternativo</label>
+                        <input type="text" class="form-control" placeholder="Telefone Alternativo" name="alternativo">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-6">
+                        <label for="exampleInputEmail1">Cidade</label>
+                        <input type="text" class="form-control" placeholder="Cidade em que vive" name="cidade">
+                    </div>
+                    <div class="form-group col-6">
+                        <label for="exampleInputEmail1">Bairro</label>
+                        <input type="text" class="form-control" placeholder="Bairro" name="bairro">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-6">
+                        <label for="exampleInputEmail1">Quarteirao</label>
+                        <input type="number" class="form-control" placeholder="Qarteirao" name="quarteirao">
+                    </div>
+                    <div class="form-group col-6">
+                        <label for="exampleInputEmail1">Casa</label>
+                        <input type="number" class="form-control" placeholder="Casa" name="casa">
+                    </div>
+                </div>
+                <div class="form-group">
+                        <label for="exampleInputEmail1">Avenida</label>
+                        <input type="text" class="form-control" placeholder="Avenida opcional" name="avenida">
+                        
+                      </div>
+                <div class="row">
+                    <div class="form-group col-6">
+                        <label for="exampleInputEmail1">Documento</label>
+                        <select class="custom-select" name="doc_type">
+                            <option value=bi>BI</option>
+                            <option value="passaporte">Passaporte</option>
+                            <option value="c_eleitor">Cartao de Eleitor</option>
+                            <option value="c_conducao">Carta de Conducao</option>
+                            </select>
+                    </div>
+                    <div class="form-group col-6">
+                        <label for="exampleInputEmail1">Numero</label>
+                        <input type="text" class="form-control" placeholder="Numero" name="num_doc">
+                    </div>
+                    <input type="hidden" name="semestre" value="1">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success form-control">Enviar</button>
+                </div>
+            </form>
+</div>
+
+
+
+
+{% endblock %}

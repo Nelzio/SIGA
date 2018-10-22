@@ -1,0 +1,47 @@
+#cadastro{
+    margin-top: 50px;
+}
+
+#cadastro form .form-group input{
+    border-bottom: solid 3px #000;
+    background-color: transparent;
+    border-radius: 0 0 0 0;
+    border-top: none;
+    border-right: none;
+    border-left: none; 
+    color: #000;
+    font-size: 20px;
+}
+
+#cadastro form .form-group input:focus{
+    box-shadow: none;
+    border-bottom: solid 3px #28a745;
+}
+
+
+#cadastro form .form-group select{
+    border-bottom: solid 3px #000;
+    background-color: transparent;
+    border-radius: 0 0 0 0;
+    border-top: none;
+    border-right: none;
+    border-left: none; 
+    color: #000;
+    font-size: 20px;
+    height: 45px;
+}
+
+#cadastro form .form-group select:focus{
+    box-shadow: none;
+    border-bottom: solid 3px #28a745;
+}
+
+
+#cadastro form .form-group button{
+    border-radius: 0 0 0 0;
+}
+
+#cadastro form .form-group label{
+    font-size: 18px;
+    text-transform: uppercase;
+}

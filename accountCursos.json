@@ -1,0 +1,69 @@
+[
+{
+    "model": "account.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$100000$R1PvXE8tp5gk$zJVGgGq8zg/nzk2cOggfew/lTNK3AlvOsIRUcVHBNnU=",
+        "last_login": "2018-10-16T07:29:34.468Z",
+        "email": "nelziositoe@gmail.com",
+        "active": true,
+        "staff": true,
+        "admin": true,
+        "timestamp": "2018-08-02T10:52:23.332Z"
+    }
+},
+{
+    "model": "home.curso",
+    "pk": 1,
+    "fields": {
+        "nome": "Sistemas Informatico",
+        "regime": false,
+        "mensalidade": "2750.00"
+    }
+},
+{
+    "model": "home.curso",
+    "pk": 2,
+    "fields": {
+        "nome": "Gest\u00e3o de Recursos Humanos e Marketing",
+        "regime": false,
+        "mensalidade": "2250.00"
+    }
+},
+{
+    "model": "home.curso",
+    "pk": 3,
+    "fields": {
+        "nome": "T\u00e9cnico Aduaneiro",
+        "regime": false,
+        "mensalidade": "2750.00"
+    }
+},
+{
+    "model": "home.curso",
+    "pk": 4,
+    "fields": {
+        "nome": "Contabilidade e Auditoria",
+        "regime": false,
+        "mensalidade": "2250.00"
+    }
+},
+{
+    "model": "home.curso",
+    "pk": 5,
+    "fields": {
+        "nome": "Gest\u00e3o Financeira e Bancaria",
+        "regime": false,
+        "mensalidade": "2250.00"
+    }
+},
+{
+    "model": "home.curso",
+    "pk": 6,
+    "fields": {
+        "nome": "Petr\u00f3leo e G\u00e1s Natura",
+        "regime": false,
+        "mensalidade": "2750.00"
+    }
+}
+]
