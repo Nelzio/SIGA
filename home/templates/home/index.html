@@ -200,9 +200,9 @@
                 </div>
             </div>
         </div>-->
-        <div class="card-deck">
-            <div class="card">
-                <div class="card-header">
+        <div class="card-deck animated flipInX">
+            <div class="card shadow-box-green">
+                <div class="card-header costum-bg-card-title">
                     <h5>Informacoes</h5>
                 </div>
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="10000">
@@ -238,8 +238,8 @@
                 </div>
 
             </div>
-            <div class="card">
-                <div class="card-header">
+            <div class="card shadow-box-green">
+                <div class="card-header costum-bg-card-title">
                     <h5>Inscricoes</h5>
                 </div>
                 <div class="card-body">
@@ -253,8 +253,8 @@
                     </ul>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-header"><h5>Cursos</h5></div>
+            <div class="card shadow-box-green">
+                <div class="card-header costum-bg-card-title"><h5>Cursos</h5></div>
                   <div class="list-group">
                       {% for curso in cursos %}
                       <a href="{% url 'url_course' pk=curso.nome|first_word %}" class="list-group-item list-group-item-action"> {{curso.nome}} </a>
@@ -270,19 +270,19 @@
                 <div class="col-md-12">
                         <h2>Paceiros</h2>
                     <div class="card-deck">
-                        <div class="card shadow-box-top">
+                        <div class="card shadow-box-green">
                             <img class="card-img-top" src="{% static 'home/img/PyCMpt.jpg' %}" height="120" width="120" alt="Card image cap">
                         </div>
-                        <div class="card shadow-box">
+                        <div class="card shadow-box-green">
                                 <img class="card-img-top" src="{% static 'home/img/iccaicon.png' %}" height="120" width="120" alt="Card image cap">
                             </div>
-                            <div class="card shadow-box">
+                            <div class="card shadow-box-green">
                                     <img class="card-img-top" src="{% static 'home/img/iccaicon.png' %}" height="120" width="120" alt="Card image cap">
                                 </div>
-                        <div class="card shadow-box">
+                        <div class="card shadow-box-green">
                             <img class="card-img-top" src="{% static 'home/img/iccaicon.png' %}" height="120" width="120" alt="Card image cap">
                         </div>
-                        <div class="card shadow-box">
+                        <div class="card shadow-box-green">
                             <img class="card-img-top" src="{% static 'home/img/iccaicon.png' %}" height="120" width="120" alt="Card image cap">
                         </div>
                     </div>

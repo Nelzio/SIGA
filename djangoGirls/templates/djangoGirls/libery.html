@@ -1,0 +1,192 @@
+{% extends "home/base.html" %}
+
+{% block  content_page %}
+    {% load static %}
+
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <!--aside information-->
+            <aside class="col-3 col-md-2 p-0 aside-biblioteca">
+                <!--<nav class="navbar content options navbar-expand flex-md-column flex-row align-items-start">
+                    <div class="collapse navbar-collapse ">
+                        <ul class="flex-md-column flex-row navbar-nav w-100 justify-content-between nav flex-column">
+                            <li class="nav-item menu-list">
+                                <a class="nav-link tree" href="#">Sistemas Informaticos</a>
+                                <ul class="tree-menu animated flex-md-column flex-row navbar-nav w-100 justify-content-between nav flex-column">
+                                    <li class="nav-item menu-list">
+                                        <a class="nav-link tree" href="#">Regular</a>
+                                        <ul class="flex-md-column flex-row navbar-nav w-100 justify-content-between nav flex-column tree-menu">
+                                            <li class="nav-item menu-list">
+                                                <a class="nav-link" href="#">Primeiro Semestre</a>
+                                            </li>
+                                            <li class="nav-item menu-list">
+                                                <a class="nav-link" href="#">Segundo Semestre</a>
+                                            </li>
+                                            <li class="nav-item menu-list">
+                                                <a class="nav-link" href="#">Terceiro Semestre</a>
+                                            </li>
+                                            <li class="nav-item menu-list">
+                                                <a class="nav-link" href="#">Quarto Semestre</a>
+                                            </li>
+                                            <li class="nav-item menu-list">
+                                                <a class="nav-link" href="#">Quinto Semestre</a>
+                                            </li>
+                                            <li class="nav-item menu-list">
+                                                <a class="nav-link" href="#">Sexto Semestre</a>
+                                            </li>
+                                            <li class="nav-item menu-list">
+                                                <a class="nav-link" href="#">Tudo</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link tree" href="#">Vocacional</a>
+                                        <ul class="flex-md-column flex-row navbar-nav w-100 justify-content-between nav flex-column tree-menu">
+                                            <li class="nav-item menu-list">
+                                                <a class="nav-link" href="#">Primeiro Semestre</a>
+                                            </li>
+                                            <li class="nav-item menu-list">
+                                                <a class="nav-link" href="#">Segrundo Semestre</a>
+                                            </li>
+                                            <li class="nav-item menu-list">
+                                                <a class="nav-link" href="#">Terceiro Semestre</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <div class="divider"></div>
+                            <li class="nav-item nopading menu-list">
+                                <a class="nav-link" href="#"> Contabilidade e Auditoria</a>
+                            </li>
+                            <div class="divider"></div>
+                            <li class="nav-item nopading menu-list">
+                                <a class="nav-link" href="#"> Recursos Homanos</a>
+                            </li>
+                            <div class="divider"></div>
+                            <li class="nav-item nopading menu-list">
+                                <a class="nav-link" href="#"> Petrolio e Gas</a>
+                            </li>
+                            <div class="divider"></div>
+                            <li class="nav-item nopading menu-list">
+                                <a class="nav-link" href="#"> Geologia e Minas</a>
+                            </li>
+                            <div class="ddivider"></div>
+
+                        </ul>
+                    </div>
+                </nav>-->
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-light">Sistemas Informaticos</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-light">Contabilidade</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-light">Recursos Humanos</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-light">Matematica</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-light">Literatura Africana</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-light">Eletronica</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-light">Mecanica</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-light">Biologia</a>
+                  </div>
+            </aside>
+
+
+            <div class="row col-md-10">
+                <div class="col-md-4">
+                <div class="card book">
+                    <div class="card-header">
+                        <h5>Eletrotecnia</h5>
+                    </div>
+                    <img class="no-border-radius card-img" src="{% static 'home/img/NelTo.png' %}" alt="Card image cap">
+                    <div class="card-body nopading">
+
+                        <button class="btn btn-success nomargin-height col-md-12 btn-optns" type="submit">Ler Livro</button>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-md-4">
+                <div class="card book">
+                    <div class="card-header">
+                        <h5>Eletrotecnia</h5>
+                    </div>
+                    <img class="no-border-radius card-img" src="{% static 'home/img/NelTo.png' %}" alt="Card image cap">
+                    <div class="card-body nopading">
+
+                        <button class="btn btn-success nomargin-height col-md-12 btn-optns" type="submit">Ler Livro</button>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-md-4">
+                <div class="card book">
+                    <div class="card-header">
+                        <h5>Eletrotecnia</h5>
+                    </div>
+                    <img class="no-border-radius card-img" src="{% static 'home/img/NelTo.png' %}" alt="Card image cap">
+                    <div class="card-body nopading">
+
+                        <button class="btn btn-success nomargin-height col-md-12 btn-optns" type="submit">Ler Livro</button>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-md-4">
+                <div class="card book">
+                    <div class="card-header">
+                        <h5>Eletrotecnia</h5>
+                    </div>
+                    <img class="no-border-radius card-img" src="{% static 'home/img/NelTo.png' %}" alt="Card image cap">
+                    <div class="card-body nopading">
+
+                        <button class="btn btn-success nomargin-height col-md-12 btn-optns" type="submit">Ler Livro</button>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-md-4">
+                <div class="card book">
+                    <div class="card-header">
+                        <h5>Eletrotecnia</h5>
+                    </div>
+                    <img class="no-border-radius card-img" src="{% static 'home/img/NelTo.png' %}" alt="Card image cap">
+                    <div class="card-body nopading">
+
+                        <button class="btn btn-success nomargin-height col-md-12 btn-optns" type="submit">Ler Livro</button>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-md-4">
+                <div class="card book">
+                    <div class="card-header">
+                        <h5>Eletrotecnia</h5>
+                    </div>
+                    <img class="no-border-radius card-img" src="{% static 'home/img/NelTo.png' %}" alt="Card image cap">
+                    <div class="card-body nopading">
+
+                        <button class="btn btn-success nomargin-height col-md-12 btn-optns" type="submit">Ler Livro</button>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-md-4">
+                <div class="card book">
+                    <div class="card-header">
+                        <h5>Eletrotecnia</h5>
+                    </div>
+                    <img class="no-border-radius card-img" src="{% static 'home/img/NelTo.png' %}" alt="Card image cap">
+                    <div class="card-body nopading">
+
+                        <button class="btn btn-success nomargin-height col-md-12 btn-optns" type="submit">Ler Livro</button>
+                    </div>
+                </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'home.apps.HomeConfig',
     'account.apps.AccountConfig',
     'admins.apps.AdminsConfig',
+    'djangoGirls.apps.DjangogirlsConfig',
 ]
 
 AUTH_USER_MODEL = 'account.User' # Muda a funcao buit-in user model para nossa funcao

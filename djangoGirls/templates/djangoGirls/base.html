@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Django Girls</title>
+    <!--<link rel='icon' href="{% static 'home/img/iccaicon.ico' %}" type='image/x-icon' />
+    <link rel='shortcut icon' href="{% static 'home/img/iccaicon.ico' %}" type='image/x-icon' />
+    --><link rel="stylesheet" href="{% static 'home/bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'home/bootstrap/css/bootstrap-grid.css' %}">
+    <link rel="stylesheet" href="{% static 'djangoGirls/css/blog.css' %}">
+
+
+
+    </head>
+    <body>
+        <div class="page-header">
+            <h1><a	href="/djgirls">Django	Girls	Blog</a></h1>
+            <a	href="{%	url	'post_new'	%}"	class="top-menu" style="color: #00FFFF;">New<span class="glyphicon glyphicon-plus"></span></a>
+        </div>
+        <div class="content	container">
+            <div class="row">
+                <div class="col-md-8">
+                    {%	block	content_page	%}
+                    {%	endblock	%}
+                </div>
+            </div>
+        </div>
+
+        <script src="{% static 'home/js/jquery.js' %}"></script>
+        <script src="{% static 'home/bootstrap/js/bootstrap.bundle.js' %}"></script>
+        <script src="{% static 'home/bootstrap/js/bootstrap.js' %}"></script>
+
+    
+    </body>
+</html>

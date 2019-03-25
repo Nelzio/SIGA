@@ -1,5 +1,5 @@
 ## Fazendo backup da base de dados
-* python manage.py dumpdata --formar json --indent 4
+* python manage.py dumpdata --format json --indent 4
 
 
 * python manage.py dumpdata account home.Curso --format json --indent 4 > accountCursos.json

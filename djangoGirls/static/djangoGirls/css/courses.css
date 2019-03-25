@@ -1,0 +1,70 @@
+.coll-semestre {
+    text-align: center;
+    color: #fff !important;
+    font-weight: bold;
+}
+
+.row-table{
+
+}
+
+.book{
+margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.btn-optns{
+    border-radius: 0 0 0 0;
+ }
+
+.no-border-radius{
+    border-radius: 0 0 0 0;
+}
+
+.descriprion-course{
+    margin-top: 50px;
+}
+
+.table-course ul.nav li.nav-item a.active{
+    background-color: #28a745 !important;
+    color: #fff;
+    border: solid #28a745;
+}
+
+.table-course ul.nav li.nav-item a{
+    color: #28a745;
+}
+
+.table-course ul.nav li.nav-item a{
+    border-radius: 0 0 0 0;
+}
+
+.table-course table{
+    margin-top: -5px;
+}
+
+
+
+
+
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+  }
+
+  /* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 4rem;
+    }
+  }

@@ -29,13 +29,13 @@
 
     <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
         <h1 class="display-4">Preço</h1>
-        <p class="lead">O curso de Sistemas informaticos na nossa instituição é lecionado em dois regime, regular e vocacional.</p>
+        <p class="lead">O curso de {{curso.nome}} na nossa instituição é lecionado em dois regime, regular e vocacional.</p>
       </div>
   
       <div class="container mb-5">
         <div class="card-deck col-8 mb-3 text-center offset-2">
-          <div class="card mb-4 box-shadow">
-            <div class="card-header">
+          <div class="card mb-4 shadow-box-green">
+            <div class="card-header costum-bg-card-title">
               <h4 class="my-0 font-weight-normal">Regular</h4>
             </div>
             <div class="card-body">
@@ -44,11 +44,11 @@
                 <li>Mínimo 10 classe ou equivalente.</li>
                 <li>5 Semestres</li>
               </ul>
-              <a href="{% url 'url_cad_matricula' curso=curso.nome|first_word regime='regular' %}" type="button" class="btn btn-lg btn-block no-border-radius btn-success">Pre-cadastro</a>
+              <a href="{% url 'url_cad_matricula' curso=curso.nome|first_word regime='regular' %}" type="button" class="btn btn-lg btn-block no-border-radius btn-costum-yellow">Pre-cadastro</a>
             </div>
           </div>
-          <div class="card mb-4 box-shadow">
-            <div class="card-header">
+          <div class="card mb-4 shadow-box-green">
+            <div class="card-header costum-bg-card-title">
               <h4 class="my-0 font-weight-normal">Vocacional</h4>
             </div>
             <div class="card-body">
@@ -57,7 +57,7 @@
                 <li>Mínimo 12 classe ou equivalente.</li>
                 <li>3 Semestres</li>
               </ul>
-              <a href="{% url 'url_cad_matricula' curso=curso.nome|first_word regime='vocacional' %}" type="button" class="btn btn-lg btn-block no-border-radius btn-success">Pre-cadastro</a>
+              <a href="{% url 'url_cad_matricula' curso=curso.nome|first_word regime='vocacional' %}" type="button" class="btn btn-lg btn-block no-border-radius btn-costum-yellow">Pre-cadastro</a>
             </div>
           </div>
         </div>
@@ -79,7 +79,7 @@
         <table class="table table-hover" id="table-regular">
             <thead class="thead-light">
             <tr>
-                <th class="coll-semestre bg-success" colspan="4">Primeiro Ano</th>
+                <th class="coll-semestre costum-bg" colspan="4">Primeiro Ano</th>
             </tr>
             <tr>
                 <th scope="col">Primeiro Semestre</th>
@@ -103,7 +103,7 @@
             </tbody>
             <thead class="thead-light">
             <tr>
-                <th class="coll-semestre bg-success" colspan="4">Segundo Ano</th>
+                <th class="coll-semestre costum-bg" colspan="4">Segundo Ano</th>
             </tr>
             <tr>
                 <th scope="col">Terceiro Semestre</th>
@@ -127,7 +127,7 @@
                 </tbody>
             <thead class="thead-light">
             <tr>
-                <th class="coll-semestre bg-success" colspan="4">Terceiro Ano</th>
+                <th class="coll-semestre costum-bg" colspan="4">Terceiro Ano</th>
             </tr>
             <tr>
                 <th scope="col">Quinto Semestre</th>
@@ -156,7 +156,7 @@
     <table class="table table-hover" id="table-vocacional">
             <thead class="thead-light">
             <tr>
-                <th class="coll-semestre bg-success" colspan="4">Primeiro Semestre</th>
+                <th class="coll-semestre costum-bg" colspan="4">Primeiro Semestre</th>
             </tr>
             <tr>
                 <th scope="col">Disciplona</th>
@@ -188,7 +188,7 @@
             </tbody>
             <thead class="thead-light">
             <tr>
-                <th class="coll-semestre bg-success" colspan="4">Segundo Semestre</th>
+                <th class="coll-semestre costum-bg" colspan="4">Segundo Semestre</th>
             </tr>
             <tr>
                 <th scope="col">Disciplona</th>
@@ -219,7 +219,7 @@
             </tbody>
             <thead class="thead-light">
             <tr>
-                <th class="coll-semestre bg-success" colspan="4">Terceiro Semestre</th>
+                <th class="coll-semestre costum-bg" colspan="4">Terceiro Semestre</th>
             </tr>
             <tr>
                 <th scope="col">Disciplona</th>

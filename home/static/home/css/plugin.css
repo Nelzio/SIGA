@@ -3,6 +3,10 @@
     box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.4) !important;
 }
 
+.shadow-box-green{
+    box-shadow: 0rem 0rem 1rem rgba(43, 112, 68, 0.4) !important;
+}
+
 .shadow-box-top{
     box-shadow: 0rem 0.7rem 1rem rgba(0, 0, 0, 0.4) !important;
 }
@@ -24,9 +28,11 @@
     padding-bottom: 0 !important;
   }
 
+
   .pading-width-c{
       padding: 0rem 0.9375rem 0rem 0.9375rem;
   }
+
 
   .total-width{
   position: relative;
@@ -39,3 +45,65 @@
   .no-border, .card{
     border-radius: 0 0 0 0;
   }
+
+  /*btns*/
+  .btn-costum-yellow{
+    background-color: #fff215 !important;
+    color: #000;
+  }
+
+  .btn-costum-yellow:hover{
+    background-color: #dad015 !important;
+    color: #000;
+  }
+
+  .btn-costum-green{
+    background-color: #2b7044 !important;
+    color: #fff;
+  }
+
+  .btn-costum-green:hover{
+    background-color: #255f3a !important;
+    color: #fff;
+  }
+
+
+  /*colors*/
+  .costum-bg{
+      background-color: #2b7044 !important;
+  }
+
+  .costum-bg-card-title{
+    background-color: #ed3437 !important;
+    color: #fff;
+  }
+
+  a.list-group-item:hover, a.list-group-item:focus {
+    transition: 0.5s;
+    background-color: #fff215 !important;
+    
+}
+
+a.list-group-item, a.list-group-item {
+    transition: 0.5s;
+    
+}
+
+/*.card .list-group:hover{
+    animation-duration: 1s;
+    /*animation-fill-mode: both;*//*
+    animation-name: slideInRight;
+}*//*
+
+@keyframes slideInRight {
+    from {
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }*/
+
+  

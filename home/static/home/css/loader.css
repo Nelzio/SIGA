@@ -1,0 +1,16 @@
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #2b7044;
+    z-index: 99999;
+    height: 100%;
+    /*background-color: #1e7e34;*/
+    color: #fff;
+    font-size: 3rem;
+  
+    padding-top: 48.5vh;
+    padding-left: 48.5vw;
+  }

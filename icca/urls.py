@@ -24,4 +24,6 @@ urlpatterns = [
     path('', include('home.urls')),
     path('account/', include('account.urls')),
     path('admin/', include('admins.urls')),
+    # test for djangoGirls
+    path('djgirls/', include('djangoGirls.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -14,14 +14,15 @@
     <link rel="stylesheet" href="{% static 'home/bootstrap/css/bootstrap.css' %}">
     <link rel="stylesheet" href="{% static 'home/bootstrap/css/bootstrap-grid.css' %}">
     <link rel="stylesheet" href="{% static 'home/bootstrap/css/bootstrap-reboot.css' %}">
+    <link rel="stylesheet" href="{% static 'home/css/animate.css' %}">
     <link rel="stylesheet" href="{% static 'home/css/style.css' %}">
     <link rel="stylesheet" href="{% static 'home/css/plugin.css' %}">
-    <link rel="stylesheet" href="{% static 'home/fonte/fontawesome/web-fonts-with-css/css/fontawesome-all.css' %}">
-    <!--<link rel="stylesheet" href="{% static 'home/fonts/font-awesome/css/font-awesome.css' %}">-->
+    <!--<link rel="stylesheet" href="{% static 'home/fonte/fontawesome/web-fonts-with-css/css/fontawesome-all.css' %}">-->
+    <link rel="stylesheet" href="{% static 'home/fonts/font-awesome/css/font-awesome.css' %}">
     <link rel="stylesheet" href="{% static 'home/css/movimento.css' %}">
     <!--cursos css-->
     <link rel="stylesheet" href="{% static 'home/css/courses.css' %}">
-    <link rel="stylesheet" href="{% static 'home/css/animate.css' %}">
+    
 
     <!--Blog css-->
     <link rel="stylesheet" href="{% static 'home/css/blog.css' %}">
@@ -32,13 +33,21 @@
     <!--Cad css-->
     <link rel="stylesheet" href="{% static 'home/css/cad.css' %}">
 
+    <!--loader-->
+    <link rel="stylesheet" href="{% static 'home/css/loader.css' %}">
     </head>
     <body>
+    <div id="loaderPageStart">
+        <div class='loader'><i class='fa fa-spin fa-spinner loaderIcon'></i></div>
+    </div>
+    
+
         <div class="container-fluid nopading">
             <img class="total-width" src="{% static 'home/img/iccalogo1.png' %}" height="150" alt="">
         </div>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-success animate navbar-costom nopading-top-bottom">
+        <nav class="navbar navbar-expand-lg navbar-dark costum-bg animate navbar-costom nopading-top-bottom" id="navbar-costom">
             <!--<a class="navbar-brand" href="#">ICCA</a>-->
+            
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -69,38 +78,42 @@
                         <a  class="nav-link" href="#">My posts <span class="sr-only">(current)</span></a>
                     </li>-->
                 </ul>
+                <div class="relogio nav-item" id="relogio"></div>
             </div>
         </nav>
+
+        
         <main>
+        
             {% block content_page %}
 
             {% endblock  %}
         </main>
-    <div class="container-fluid bg-success">
+    <div class="container-fluid costum-bg" id="footer">
         <footer class="" style="color: #ddd;">
             <div class="container">
-                <div class="row contact">
+                <div class="row contact justify-content-md-center">
 
-                    <div class="col-md-8 offset-md-2 ">
+                    <div class="col-md-8">
                         <!--<h1>Meet us</h1>-->
                         <div class="row contact-us">
                             <div class="col-md-4 ">
                                 <h4>Endereco</h4>
-                                <p>Maputo</p>
-                                <p>Av. Karl Max</p>
-                                <p>Nr 501, 1o Andar</p>
+                                <p> <i class="fa fa-map-marker ico-endereco"></i> Maputo</p>
+                                <p> <i class="fa fa-car ico-endereco"></i> Av. Karl Max</p>
+                                <p> <i class="fa fa-street-view ico-endereco"></i> Nr 501, 1o Andar</p>
                             </div>
                             <div class="col-md-4 info-contacto">
                                 <h4>Contacto</h4>
-                                <p>Email: info@icca.ac.mz</p>
-                                <p>Celular:+258 825 692 23</p>
-                                <p>Celular:+258 845 991 11 </p>
+                                <p> <i class="fa fa-envelope" aria-hidden="true"></i> Email: info@icca.ac.mz</p>
+                                <p> <i class="fa fa-phone-square"></i> Celular:+258 825 692 23</p>
+                                <p> <i class="fa fa-phone-square"></i> Celular:+258 845 991 11 </p>
                             </div>
                             <div class="col-md-4">
                                 <h4>Redes Sociais</h4>
-                                <p><a href="http://facebook.com/iccamz">facebool.com/iccamz</a></p>
-                                <p>@ICCA</p>
-                                <p><a href="http://linked.in/iccamz">linkedIn/ICCA</a></p>
+                                <p> <i class="fa fa-facebook-square"></i> <a target="_blank" href="http://facebook.com/iccamz">facebool.com/iccamz</a></p>
+                                <p> <i class="fa fa-instagram"></i> @ICCA</p>
+                                <p> <i class="fa fa-linkedin-square" aria-hidden="true"></i> <a target="_blank"  href="http://linked.in/iccamz">linkedIn/ICCA</a></p>
                             </div>
                         </div>
                         <div class="row">
@@ -125,5 +138,7 @@
     
     <script src="{% static 'home/js/jquery.parallax.js' %}"></script> 
     <script src="{% static 'home/js/backscroll.js' %}"></script>
+    <script src="{% static 'home/js/relogio.js' %}"></script>
+    <script src="{% static 'home/js/loader.js' %}"></script>
     </body>
 </html>

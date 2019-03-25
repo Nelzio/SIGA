@@ -17,7 +17,7 @@ def create_account(request):
             return redirect("url_home")
 
     data['form'] = UserAdminCreationForm()
-    return render(request, 'home/singup.html', data)
+    return render(request, 'account/singup.html', data)
 
 
 def login_view(request):
@@ -35,10 +35,11 @@ def login_view(request):
             return redirect('url_home')
         else:
             # Return an 'invalid login' error message.
-            return redirect('url_login')
+            print(request.POST['url_next']+"====Aqui")
+            return redirect(request.POST['url_next'])
     else:
         proximo['prox'] = request.GET.get('next')
-        return render(request, 'home/login.html', proximo)
+        return render(request, 'account/login.html', proximo)
 
 
 def logout_view(request):

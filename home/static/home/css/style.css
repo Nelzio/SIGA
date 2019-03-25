@@ -1,5 +1,5 @@
 body{
-    background-color: #ddd;
+    background-color: #fff;
     font-size: 15px;
 }
 
@@ -15,6 +15,7 @@ body{
     background-color: yellow;
     margin: 0;
 }
+
 
 
 /*base*/
@@ -214,3 +215,23 @@ box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 1) !important;
     /*end aside/*/
 
     /*end link biblioteca*/
+
+    /*relogio*/
+    .relogio{
+        width: 6.5rem;
+        text-align: center;
+        font-weight: bold;
+        color: #fff !important;
+    }
+
+    /*endereo*/
+    .ico-endereco{
+        padding-right: 2px;
+        width: 16px;
+        text-align: center;
+    }
+
+
+    .card-deck.animated{
+        animation-duration: 2s !important;
+    }
