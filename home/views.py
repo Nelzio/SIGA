@@ -13,7 +13,7 @@ def caps_no_space(value):
             val = val + v[0]
     return val
 
-@login_required
+# @login_required
 def home(request):
     data = {}
     data['boxes'] = ['1', '2', '3']
@@ -22,12 +22,12 @@ def home(request):
     return render(request, 'home/index.html', data)
 
 
-@login_required
+# @login_required
 def libery_view(request):
     return render(request, 'home/libery.html')
 
 
-@login_required
+# @login_required
 def courses_view(request, pk):
     data = dict()
     data['cursos'] = Curso.objects.all()
@@ -37,17 +37,17 @@ def courses_view(request, pk):
     return render(request, 'home/courses.html', data)
 
 
-@login_required
+# @login_required
 def blog_view(request):
     return render(request, 'home/blog.html')
 
 
-@login_required
+# @login_required
 def about_view(request):
     return render(request, 'home/about.html')
 
 
-@login_required
+# @login_required
 def cad_view(request, curso, regime):
     data = dict()
     data['cursos'] = Curso.objects.all()
